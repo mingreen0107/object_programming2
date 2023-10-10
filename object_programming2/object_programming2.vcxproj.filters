@@ -57,7 +57,10 @@
     <ClCompile Include="p162_Q10.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="b163_Q12.cpp">
+    <ClCompile Include="p163_Q12.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="p164_Q13.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
