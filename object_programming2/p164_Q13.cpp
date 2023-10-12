@@ -6,7 +6,6 @@ using namespace std;
 int main() {
 
 	string password;
-
 	int num = 0, big = 0, small = 0;
 
 	cout << "암호를 입력하시오: ";
