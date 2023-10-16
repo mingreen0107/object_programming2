@@ -14,19 +14,17 @@ public:
 	}
 	void deposit(int amount) {
 		balance += amount;
+		cout << "after+" << amount << " ";
 	}
 	void withdraw(int amount) {
 		if (balance >= amount) {
 			balance -= amount;
+			cout << "after-" << amount << " ";
 		}
 		else cout << "Insufficient funds" << endl;
 	}
 	void printBalance() {
 		cout << "balance: " << balance << endl;
-	}
-
-	void result() {
-
 	}
 };
 int main() {

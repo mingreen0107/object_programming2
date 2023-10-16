@@ -24,7 +24,7 @@ public:
 int main() {
 
 	Complex num1(5, 3);
-	Complex num2(3, 4);
+	Complex num2(3, -4);
 	num1.print();
 	num2.print();
 
