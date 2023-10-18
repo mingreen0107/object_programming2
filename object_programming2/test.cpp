@@ -1,22 +1,33 @@
 #include <iostream>
+#include <windows.h>
 
 using namespace std;
 
-class PrintData {
+class Circle {
+	int x, y, radius;
+	string color;
+
 public:
-	void print(int i) { cout << i << endl; }
-	void print(double f) { cout << f << endl; }
-	void print(string s="No Data!") { cout << s << endl; }
+	Circle(int xval, int yval, int r, string c = "");
+	double calcArea() {
+		return 3.14 * radius * radius;
+	}
+	void draw();
 };
+Circle::Circle(int xval, int yval, int r, string c) :x(xval), y(yval), radius(r), color(c) {}
+
+void Circle::draw() {
+	HDC hdc = GetWindowDC(GetForegroundWindow());
+	Ellipse(hdc, x - radius, y - radius, x + radius, y + radius);
+}
 
 int main() {
-
-	PrintData obj;
-
-	obj.print(1);
-	obj.print(3.14);
-	obj.print("C++14 is cool.");
-	obj.print();
-	
+	for (int i = 0; i < 10; i++) {
+		int x = 100 + rand() % 300;
+		int y = 100 + rand() % 300;
+		int r = rand() % 100;
+		Circle c(x, y, r, "Yellow");
+		c.draw();
+	}
 	return 0;
 }

@@ -111,5 +111,17 @@
     <ClCompile Include="p244_Q3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="time5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="time6.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pizza2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="p246_Q2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
