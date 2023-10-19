@@ -1,13 +1,17 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-	bool b;
-	b = (1 == 2);
 
-	cout << std::boolalpha;
-	cout << b;
-
+	int i = 0;
+	for (;;) {
+		if (i > 10) break;
+		if (i < 6) continue;
+		printf("%d", i);
+		i++;
+	}
+	
 	return 0;
 }
