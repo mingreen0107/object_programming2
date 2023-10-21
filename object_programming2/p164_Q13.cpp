@@ -1,3 +1,5 @@
+// 암호 안에 대문자, 소문자, 숫자가 들어가있는지 확인
+
 #include <iostream>
 #include <string>
 
@@ -7,7 +9,7 @@ int main() {
 
 	string password;
 	int num = 0, big = 0, small = 0;
-	cout << "암호를 입력하시오: ";
+	cout << "enter password: ";
 	cin >> password;
 
 	for (int i = 0; i < password.size(); i++) {
@@ -18,7 +20,7 @@ int main() {
 		else if (97 <= password[i] && password[i] <= 122)
 			small++;
 	}
-	if (num == 1 && big == 1 && small == 1)
+	if (num > 0 && big > 0 && small > 0)
 		cout << "안전합니다.";
 	else
 		cout << "안전하지 않습니다.";

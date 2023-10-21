@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Sum {
+class sum {
 	int n1, n2;
 
 public:
@@ -18,8 +18,7 @@ public:
 
 int main() {
 
-	Sum obj;
-
-	obj.init(10, 20);
-	cout << "result = " << obj.add();
+	sum obj;
+	obj.init(1, 2);
+	cout << obj.add();
 }

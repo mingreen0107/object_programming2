@@ -1,13 +1,21 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
+class Time {
+public:
+	int hour;
+	int minute;
+
+	Time(int h = 0, int m = 0) : hour(h), minute(m) { }
+
+	void print() {
+		cout << hour << ":" << minute;
+	}
+};
+
 int main() {
 
-	string s{ "Hello World!" };
-	int i = s.find("W", 0);
-	cout << i;
-
-	return 0;
+	Time a(10, 30);
+	a.print();
 }

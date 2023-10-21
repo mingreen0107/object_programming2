@@ -1,3 +1,5 @@
+// 사용자로부터 받은 문자열에서 각각의 문자가 나타나는 빈도를 계산하여 출력
+
 #include <iostream>
 #include <string>
 
@@ -6,7 +8,7 @@ using namespace std;
 int main() {
 
 	int cnt[26] = { 0 };
-	char apb = 97;
+	char apb = 'a';
 	string s;
 
 	cout << "문자열을 입력하시오: ";
@@ -19,6 +21,5 @@ int main() {
 		cout << apb << ": " << cnt[i] << endl;
 		apb++;
 	}
-
 	return 0;
 }

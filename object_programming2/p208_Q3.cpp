@@ -53,3 +53,32 @@ int main() {
 
 	return 0;
 }
+/*class Employee {
+private:
+	string name;
+	int age;
+	double salary;
+	int years;
+
+public:
+	void result(string n, int a, double s, int y) {
+		name = n;
+		age = a;
+		salary = s;
+		years = y;
+
+		cout << n << endl;
+		cout << a << endl;
+		cout << s << endl;
+		cout << y;
+	}
+};
+
+int main() {
+
+	Employee obj;
+
+	obj.result("minju", 20, 20.1, 2);
+
+	return 0;
+}*/
