@@ -10,6 +10,7 @@ private:
 	double speed;
 
 public:
+	// 중복정의
 	Airplan() {}
 	Airplan(string n, int c, double s) :name(n), capacity(c), speed(s) {}
 
@@ -30,9 +31,9 @@ public:
 int main() {
 
 	Airplan plane1;
-	Airplan plane2("minju", 250, 900.0);
+	Airplan plane2("a", 250, 900.0);
 
-	plane1.setName("a");
+	plane1.setName("b");
 	plane1.setCapacity(200);
 	plane1.setSpeed(850.0);
 
