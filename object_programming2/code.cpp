@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-	char secret_code = 's';
+	char secret_code = 'h';
 
 	cout << "비밀코드를 맞춰보세요: ";
 	char code;
