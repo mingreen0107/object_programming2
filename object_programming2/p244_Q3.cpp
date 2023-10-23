@@ -12,19 +12,15 @@ public:
     BankAccount(int initial_balance = 0, double initial_rate = 0.05) : balance(initial_balance), rate(initial_rate) {}
 
     // deposit() 멤버 함수: 예금 계좌에 입금
-    void deposit(int amount) {
-        balance += amount;
-    }
+    void deposit(int amount) { balance += amount; }
 
     // withdraw() 멤버 함수: 예금 계좌에서 출금
     void withdraw(int amount) {
         if (amount <= balance) {
             balance -= amount;
         }
-        else {
-            // 잔고보다 많은 금액을 출금하려고 할 때 에러 메시지 출력
+        else 
             cout << "Insufficient funds!" << endl;
-        }
     }
 };
 
