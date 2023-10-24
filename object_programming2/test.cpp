@@ -1,22 +1,26 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-class Person {
-private:
-	string name;
-	int snumber;
-	int age;
-
+class Circle {
 public:
-	Person();
-	Person(string name, int snum, int age) :name(name), snumber(snum), age(age) { }
+	int x, y, radius;
+	Circle(int x = 0, int y = 0, int r = 0) :x(x), y(y), radius(r) { }
+	void print() {
+		cout << radius << " " << x << " " << y << endl;
+	}
 };
 
 int main() {
 
-	
+	Circle obj[10];
+
+	for (Circle& c : obj) {
+		c.x = rand() % 500;
+		c.y = rand() % 300;
+		c.radius = rand() % 100;
+	}
+	for (Circle c : obj) c.print();
 
 	return 0;
 }
