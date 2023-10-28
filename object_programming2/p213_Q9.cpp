@@ -10,9 +10,16 @@ public:
 		b = x;
 		h = y;
 	}
+	double calcArea() {
+		double area;
+		area = b * h / 2;
+		return area;
+	}
+	/*
 	int area() {
 		return (b * h) / 2;
 	}
+	*/
 };
 
 int main() {
@@ -20,7 +27,7 @@ int main() {
 	Triangle obj;
 	obj.setTriangle(3, 4);
 
-	cout << "area = " << obj.area();
+	cout << "area = " << obj.calcArea();
 
 	return 0;
 }
