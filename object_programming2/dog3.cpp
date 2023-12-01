@@ -8,7 +8,6 @@ private:
 	int* pAge;
 
 public:
-
 	Dog() {
 		pAge = new int{ 1 };
 		pWeight = new int{ 10 };
