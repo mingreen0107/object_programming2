@@ -31,5 +31,6 @@ int main() {
 	cout << "age " << pDog->getAge() << endl;
 
 	delete pDog;
+
 	return 0;
 }
