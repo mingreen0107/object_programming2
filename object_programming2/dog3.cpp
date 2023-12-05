@@ -6,7 +6,6 @@ class Dog {
 private:
 	int* pWeight;
 	int* pAge;
-
 public:
 	Dog() {
 		pAge = new int{ 1 };
