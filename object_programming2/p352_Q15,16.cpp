@@ -21,7 +21,7 @@ public:
 	
 };
 
-bool is_equal(Rect& r1, Rect& r2) {
+bool is_equal(Rect r1, Rect r2) {
 		return (r1.getWidth() == r2.getWidth()) && (r1.getHeight() == r2.getHeight());
 	}
 
@@ -30,7 +30,7 @@ int main() {
 	Rect* r1 = new Rect(1, 2);
 	Rect* r2 = new Rect(1, 2);
 
-	cout << "equl?: " << (is_equal(*r1, *r2) ? "Y" : "N");
+	cout << "equl?: " << (is_equal(*r1, *r2) ? "Y" : "N"); 
 
 	delete r1;
 	delete r2;
