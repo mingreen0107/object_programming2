@@ -27,6 +27,7 @@ public:
 int Box::count = 0;
 
 int main() {
+
 	cout << "Initial Box count: " << Box::getCount() << endl;
 
 	Box box1;
