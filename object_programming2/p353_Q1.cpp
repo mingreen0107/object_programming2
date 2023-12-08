@@ -7,7 +7,7 @@ int main() {
 	int size;
 	cout << "input size: ";
 	cin >> size;
-
+	
 	int* arr = new int[size];
 
 	for (int i = 0; i < size; i++) {
