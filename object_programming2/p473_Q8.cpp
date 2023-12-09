@@ -7,14 +7,14 @@ class Human {
     int age;
 
 public:
-    Human(string name, int age) : name(name), age(age) { }
+    Human(string n, int a) : name(n), age(a) { }
 
-    string getName() const { return name; }
-    void setName(string newName) { name = newName; }
-    int getAge() const { return age; }
-    void setAge(int newAge) { age = newAge; }
+    string getName() { return name; }
+    void setName(string n) { name = n; }
+    int getAge() { return age; }
+    void setAge(int a) { age = a; }
 
-    void print() const {
+    void print() {
         cout << "Name: " << name << ", Age: " << age << endl;
     }
 };
@@ -22,12 +22,12 @@ class Student : public Human {
     string major;
 
 public:
-    Student(string name, int age, string major) : Human(name, age), major(major) {}
+    Student(string n, int a, string m) : Human(n, a), major(m) { }
 
-    string getMajor() const { return major; }
-    void setMajor(string newMajor) { major = newMajor; }
+    string getMajor() { return major; }
+    void setMajor(string m) { major = m; }
 
-    void print() const {
+    void print() {
         Human::print();
         cout << "Major: " << major << endl;
     }

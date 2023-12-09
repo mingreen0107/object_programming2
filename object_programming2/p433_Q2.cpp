@@ -9,10 +9,10 @@ private:
 public:
     Box(double l = 0.0, double w = 0.0, double h = 0.0) : length(l), width(w), height(h) { }
 
-    double volume() const {
+    double volume() {
         return length * width * height;
     }
-    bool operator==(const Box& other) const {
+    bool operator==(Box& other) {
         return this->volume() == other.volume();
     }
 };

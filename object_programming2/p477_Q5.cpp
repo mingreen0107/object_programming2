@@ -9,11 +9,11 @@ class Shape {
 public:
     Shape(int x, int y, string c) : x(x), y(y), color(c) { }
 
-    int getX() const { return x; }
+    int getX() { return x; }
     void setX(int newX) { x = newX; }
-    int getY() const { return y; }
+    int getY() { return y; }
     void setY(int newY) { y = newY; }
-    string getColor() const { return color; }
+    string getColor() { return color; }
     void setColor(string c) { color = c; }
 
     virtual double getArea() = 0;
@@ -24,10 +24,10 @@ class Circle : public Shape {
 public:
     Circle(int x, int y, string c, double r) : Shape(x, y, c), radius(r) {}
 
-    double getRadius() const { return radius; }
+    double getRadius() { return radius; }
     void setRadius(double r) { radius = r; }
 
-    double getArea() override {
+    double getArea() {
         return 3.14 * radius * radius;
     }
 };

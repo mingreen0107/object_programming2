@@ -15,9 +15,9 @@ public:
 
 int main() {
 
-	Circle* p = new Circle();
-	const Circle* pConstObj = new Circle();
-	Circle* const pConstPtr = new Circle();
+	Circle* p = new Circle;
+	const Circle* pConstObj = new Circle;
+	Circle* const pConstPtr = new Circle;
 
 	cout << "pRect->r: " << p->getRaduis() << endl;
 	cout << "pObj->r: " << pConstObj->getRaduis() << endl;

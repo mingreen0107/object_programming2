@@ -7,12 +7,12 @@ class Employee {
     int salary;
 
 public:
-    Employee(string name, int salary) : name(name), salary(salary) {}
+    Employee(string n, int s) : name(n), salary(s) {}
 
-    string getName() const { return name; }
-    void setName(string newName) { name = newName; }
-    int getSalary() const { return salary; }
-    void setSalary(int newSalary) { salary = newSalary; }
+    string getName() { return name; }
+    void setName(string n) { name = n; }
+    int getSalary() { return salary; }
+    void setSalary(int s) { salary = s; }
 
     int computeSalary(int workingDays) {
         return salary * workingDays;
