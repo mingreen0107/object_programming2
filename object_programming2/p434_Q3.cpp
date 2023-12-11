@@ -12,17 +12,16 @@ public:
     double volume() {
         return length * width * height;
     }
-    bool operator<(Box& other) {
-        return this->volume() < other.volume();
+    bool operator<(Box& b) {
+        return this->volume() < b.volume();
     }
 };
 
 int main() {
 
-    Box box1(10, 10, 10), box2(20, 10, 5), box3(10, 10, 10);
+    Box a(10, 10, 10), b(20, 20, 20);
 
-    cout << "Box1 is " << (box1 < box2 ? "smaller than" : "not smaller than") << " Box2" << endl;
-    cout << "Box1 is " << (box1 < box3 ? "smaller than" : "not smaller than") << " Box3" << endl;
+    cout << (a < b ? "true" : "flase");
 
     return 0;
 }

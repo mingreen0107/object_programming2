@@ -9,7 +9,7 @@ private:
 public:
     Box(double l = 0.0, double w = 0.0, double h = 0.0) : length(l), width(w), height(h) { }
 
-    Box operator+(const Box& b) {
+    Box operator+(Box& b) {
         return Box(length + b.length, width + b.width, height + b.height);
     }
     void display() {

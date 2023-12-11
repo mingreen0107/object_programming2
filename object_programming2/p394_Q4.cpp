@@ -24,6 +24,7 @@ void swap(Point& p1, Point& p2) {
 	p2.setX(tempX);
 	p2.setY(tempY);
 }
+
 int main() {
 
 	Point p1(1.0, 2.0), p2(3.0, 4.0);

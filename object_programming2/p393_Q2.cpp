@@ -4,9 +4,9 @@ using namespace std;
 
 class Line {
 public:
-	int getLength(void);
+	int getLength();
 	Line(int len);
-	Line(const Line& obj);
+	Line(Line& obj);
 	~Line();
 
 private:
@@ -17,7 +17,7 @@ Line::Line(int len) {
 	ptr = new int;
 	*ptr = len;
 }
-Line::Line(const Line& obj) {
+Line::Line(Line& obj) {
 	cout << "복사 생성자" << endl;
 	ptr = new int;
 	*ptr = *obj.ptr;
@@ -26,9 +26,10 @@ Line::~Line() {
 	cout << "소멸자" << endl;
 	delete ptr;
 }
-int Line::getLength(void) {
+int Line::getLength() {
 	return *ptr;
 }
+
 int main() {
 
 	Line line1(10);

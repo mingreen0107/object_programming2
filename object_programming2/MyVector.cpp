@@ -16,8 +16,10 @@ public:
 };
 MyVector MyVector::operator+(const MyVector& v2) {
 	MyVector v;
+
 	v.x = this->x + v2.x;
 	v.y = this->y + v2.y;
+
 	return v;
 }
 

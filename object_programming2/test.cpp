@@ -1,15 +1,24 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
+class Box {
+private:
+    double length, width, height;
+
+public:
+    Box(double l = 0.0, double w = 0.0, double h = 0.0) : length(l), width(w), height(h) { }
+
+    friend void printBox(Box a);
+};
+void printBox(Box a) {
+}
+
 int main() {
 
-	int a = 2;
-	int b = 2;
-	double c = a * b / 3;
+    Box a(10, 20, 30);
 
-	cout << c;
+    printBox(a);
 
-	return 0;
+    return 0;
 }

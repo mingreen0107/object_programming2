@@ -9,18 +9,17 @@ private:
 public:
     Box(double l = 0.0, double w = 0.0, double h = 0.0) : length(l), width(w), height(h) { }
 
-    friend void printBox(Box box);
+    friend void printBox(Box a);
 };
-void printBox(Box box) {
-    cout << "Box dimensions: " << "Length = " << box.length
-        << ", Width = " << box.width << ", Height = " << box.height << endl;
+void printBox(Box a) {
+    cout << a.length << ", " << a.width << ", " << a.height << endl;
 }
 
 int main() {
 
-    Box myBox(10, 20, 30);
+    Box a(10, 20, 30);
 
-    printBox(myBox);
+    printBox(a);
 
     return 0;
 }

@@ -7,6 +7,7 @@ public:
 	MyClass(const char* str);
 	MyClass(const MyClass& obj);
 	~MyClass();
+
 private:
 	char* stored;
 };
@@ -23,6 +24,7 @@ MyClass::~MyClass() {
 }
 
 int main() {
+	
 	MyClass original("mimm");
 	MyClass copy = original;
 

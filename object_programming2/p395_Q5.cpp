@@ -15,6 +15,7 @@ public:
 		length = l;
 		width = w;
 		height = h;
+
 		count++;
 	}
 	double Volume() {
