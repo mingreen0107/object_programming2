@@ -2,7 +2,7 @@
 
 using namespace std;
 
-template <class T>
+template <typename T>
 T getAverage(T arr[], int n) {
 	T average = 0;
 

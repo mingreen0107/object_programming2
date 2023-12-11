@@ -13,17 +13,12 @@ public:
 class Television : public HomeAppliance {
 public:
     Television(int p) : HomeAppliance(p) {}
-    double getPrice() {
-        return price * 0.9;
-    }
+    double getPrice() { return price * 0.9; }
 };
-
 class Refrigerator : public HomeAppliance {
 public:
     Refrigerator(int p) : HomeAppliance(p) {}
-    double getPrice() {
-        return price * 0.95;
-    }
+    double getPrice() { return price * 0.95; }
 };
 
 int main() {

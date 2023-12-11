@@ -2,7 +2,7 @@
 
 using namespace std;
 
-template <class T>
+template <typename T>
 T getSmallest(T arr[], int n) {
 	T small = arr[0];
 

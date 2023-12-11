@@ -2,23 +2,25 @@
 
 using namespace std;
 
-class Box {
-private:
-    double length, width, height;
+template <typename T>
+T getSmallest(T arr[], int n) {
+	T small = arr[0];
 
-public:
-    Box(double l = 0.0, double w = 0.0, double h = 0.0) : length(l), width(w), height(h) { }
+	for (int i = 0; i < n; i++) {
+		if (small > arr[i]) small = arr[i];
+	}
+	cout << small << endl;
 
-    friend void printBox(Box a);
-};
-void printBox(Box a) {
+	return small;
 }
 
 int main() {
 
-    Box a(10, 20, 30);
+	double list1[] = { 1.2, 2.3, 1.1 };
+	getSmallest(list1, 3);
 
-    printBox(a);
+	int list2[] = { 3, 2, 1 };
+	getSmallest(list2, 3);
 
-    return 0;
+	return 0;
 }
