@@ -11,7 +11,7 @@ T getSmallest(T arr[], int n) {
 	}
 	cout << small << endl;
 
-	return small;
+	return 0;
 }
 
 int main() {

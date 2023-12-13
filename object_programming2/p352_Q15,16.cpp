@@ -17,10 +17,7 @@ public:
 
 	int Area() { return width * height; }
 	int Perimeter() { return (width + height) * 2; }
-
-	
 };
-
 bool is_equal(Rect r1, Rect r2) {
 		return (r1.getWidth() == r2.getWidth()) && (r1.getHeight() == r2.getHeight());
 	}
