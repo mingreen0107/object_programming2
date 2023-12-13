@@ -2,25 +2,28 @@
 
 using namespace std;
 
-template <typename T>
-T getSmallest(T arr[], int n) {
-	T small = arr[0];
+class C {
+private:
+	double r, i;
 
-	for (int i = 0; i < n; i++) {
-		if (small > arr[i]) small = arr[i];
-	}
-	cout << small << endl;
+public:
+	C(double r = 0.0, double i = 0.0) :r(r), i(i) { }
 
-	return 0;
+	double getReal() { return r; }
+	double getImag() { return i; }
+
+	C operator+=(C& obj);
+};
+C C::operator+=(C& obj) {
+	return (this->r + obj.r, this->i + obj.i);
 }
-
 int main() {
 
-	double list1[] = { 1.2, 2.3, 1.1 };
-	getSmallest(list1, 3);
+	C a(1.1, 1.1), b(1.1, 1.1);
 
-	int list2[] = { 3, 2, 1 };
-	getSmallest(list2, 3);
+	a += b;
+
+	cout << a.getReal() << " " << a.getImag();
 
 	return 0;
 }

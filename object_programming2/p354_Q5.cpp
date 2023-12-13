@@ -16,16 +16,10 @@ class MyClass {
 	int size;
 
 public:
-	MyClass(string name, int size) :className(name), size(size) {
-		p = new Student[size];
-	}
-	~MyClass() {
-		delete[] p;
-	}
+	MyClass(string name, int size) :className(name), size(size) { p = new Student[size]; }
+	~MyClass() { delete[] p; }
 	void setStudentName(int index, string name) {
-		if (index >= 0 && index < size) {
-			p[index].setName(name);
-		}
+		if (index >= 0 && index < size) { p[index].setName(name); }
 	}
 	void printClass() {
 		cout << "Class Name: " << className << endl;
@@ -42,7 +36,6 @@ int main() {
 	specialClass.setStudentName(0, "s");
 	specialClass.setStudentName(1, "m");
 	specialClass.setStudentName(2, "j");
-
 
 	specialClass.printClass();
 
