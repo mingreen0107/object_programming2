@@ -8,7 +8,6 @@ public:
 	Complex(double r = 0, double i = 0) :real(r), imag(i) {
 		cout << "생성자 호출" << endl;
 	}
-
 	~Complex() { cout << "소멸자 호출" << endl; }
 	void print() {
 		cout << real << "+" << imag << "i" << endl;
